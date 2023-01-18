@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400&display=swap');
+
 *{
-  margin: 4.3px;
+  margin: 2px;
   padding: 0;
   box-sizing: border-box;
   list-style-type: none;
+  text-decoration: none;
+  font-family: 'Roboto Mono', monospace;
 }
 
 body{
@@ -11,8 +15,9 @@ body{
 }
 
 .header-container{
-  background-color:rgb(241, 242, 244);
+  background-color:#d9f99d;
   grid-column: 2 / 4;
+  padding: 10px;
 }
 
 input{
@@ -39,14 +44,19 @@ button {
   border: none;
   color: white;
   border-radius: 20px;
-  padding: 15px 32px;
+  padding: 10px 30px;
   text-align: center;
   text-decoration: none;
   font-size: 14px;
 }
+button:hover{
+  cursor: pointer;
+  font-weight: bold;
+
+}
 
 .left-nav{
-  background-color: rgb(111, 156, 198);
+  background-color: #93c5fd;
   grid-column: 1 / 2;
   grid-row: 1 / 4;
   padding: 10px;
@@ -54,8 +64,17 @@ button {
   font-size: large;
 }
 
+.left-nav:hover{
+  background-color: antiquewhite;
+}
+
 .left-nav > h1 {
   margin-bottom: 30px;
+}
+
+.left-nav > ul > li:hover{
+cursor: pointer;
+color: #1664be;
 }
 
 .projects{
@@ -63,14 +82,22 @@ button {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
+  padding: 10px;
 }
 
 .right-nav{
   background-color: antiquewhite;
+  padding: 10px;
+  font-size: small;
 }
 
 .project{
   border: 1px solid yellowgreen;
   padding: 10px;
   background-color:azure;
+  margin: 10px;
+}
+
+.project:hover{
+  border-color: rgb(178, 28, 28);
 }
